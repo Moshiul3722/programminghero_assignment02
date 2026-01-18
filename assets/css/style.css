@@ -1,0 +1,14 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* header content style */
+.header_content {
+  background-image: url("../images/hero-bg.png");
+  height: 760px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
