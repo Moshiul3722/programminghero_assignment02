@@ -24,7 +24,26 @@ a {
   --h2-size: 60px;
 }
 
+/* nav style */
+nav{
+  border-bottom: 1px solid #ffffff;
+  opacity: 6;
+}
+.logo{
+  font-size: 40px;
+  font-weight: 900;
+  color: #ffffff;
+}
+
+.logo span{
+  background: linear-gradient(45deg, #f7e93f, #fb09b4, #9100f8);
+  background-clip: text;
+  color: transparent;
+}
+
+
 /* header content style */
+
 
 .image_stack,
 .bg_image {
