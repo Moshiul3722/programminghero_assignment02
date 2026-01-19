@@ -1,17 +1,17 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
 
-* {
+/* * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
+} */
 
 body {
   font-family: "Inter", sans-serif;
 }
 
 .wrapper {
-  width: 1200px;
+  width: 1100px;
   margin: 0 auto;
 }
 
@@ -19,7 +19,7 @@ a {
   text-decoration: none;
 }
 
-::root {
+:root {
   --primary-font-color: #ffffff;
   --h2-size: 60px;
 }
@@ -50,11 +50,6 @@ a {
   z-index: 1;
 }
 
-/* .top_image {
-  height: 175px;
-  width: 117px;
-} */
-
 .top_image {
   position: absolute;
   top: 50%;
@@ -63,6 +58,18 @@ a {
   width: 40%;
   height: auto;
   z-index: 2;
+}
+
+.batch {
+    z-index: 3;
+    position: absolute;
+    right: 24px;
+    top: 25px;
+    color: #1A0B2E;
+    background: #00FF88;
+    padding: 1px 16px;
+    border-radius: 27px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
 }
 
 .header_content {
@@ -135,17 +142,84 @@ a {
   height: 646px;
   background: #1a0b2e;
   color: #ffffff;
-  padding: 50px 0 120px;
+  padding: 50px 0 40px;
   text-align: center;
 }
-
-.about h2 {
+.about_content{
+  margin-bottom: 80px;
+}
+.about_content h2 {
   font-weight: 700;
   font-size: 48px;
 }
 
-.about p:first-of-type {
-  margin-top: 16px;
+.about_content p:first-of-type {
+  margin: 16px 0 20px;
   font-weight: 400;
-  line-height: 20px;
+  line-height: 1.8;
+}
+
+.about_facts{
+  padding: 40px 0;
+  border-top: 1px solid #fff;
+}
+
+/* choose section style */
+#choose_section{
+  padding: 120px 0;
+}
+
+#choose_section h2:first-child{
+  margin-bottom: 40px;
+}
+
+.choose_card{
+  padding: 40px;
+  border-radius: 40px;
+}
+
+.choose_card h4{
+  margin: 16px 0;
+}
+
+/* featured section style */
+#featured_section{
+  padding: 120px 0;
+}
+
+.video_card_content{
+  padding: 24px;
+}
+
+.video_card_content h3{
+  line-height: 1.2;
+}
+.video_card_content p{
+  margin: 12px 0;
+}
+
+/* meet the host style */
+/* .host_content ul{
+  display: flex;
+  gap: 8px;
+}
+
+.host_content ul li a{
+  border: 1px solid #533C72;
+  padding: 10px;
+  border-radius: 50%;
+}*/
+
+/* .host_content ul li a i{
+color: linear-gradient(180deg, rgba(247, 233, 63, 1) 0%, rgba(251, 9, 180, 1) 50%, rgba(145, 0, 248, 1) 100%);
+}  */
+
+
+/* footer style */
+footer{
+  background: url("../images/footer-bg.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  color: white
 }

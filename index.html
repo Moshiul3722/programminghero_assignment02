@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -9,13 +9,15 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
     />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   </head>
   <body>
+    <!-- header start -->
     <header>
-      <nav>
+      <nav class="flex justify-between py-4">
         <div class="logo">Tech<span>Wave</span></div>
         <div class="menu">
-          <ul>
+          <ul class="flex gap-8">
             <li><a href="#">About</a></li>
             <li><a href="#">Episodes</a></li>
             <li><a href="#">Host</a></li>
@@ -37,6 +39,7 @@
             alt="Logo"
             class="top_image"
           />
+          <div class="batch">New</div>
         </div>
         <div class="content">
           <h2>TechWave</h2>
@@ -53,9 +56,11 @@
         </div>
       </div>
     </header>
+    <!-- header end -->
 
+    <!-- about section start -->
     <section id="about_section">
-      <div class="wrapper about">
+      <div class="wrapper about_content">
         <h2>About the Podcast</h2>
         <p>
           TechWave is your go-to podcast for staying ahead in the fast-paced
@@ -64,10 +69,240 @@
           share stories of personal growth from industry leaders. Join thousands
           of young
         </p>
-        <p>
+        <p class="">
           professionals and tech enthusiasts who start their day with TechWave.
         </p>
       </div>
+      <div class="about_facts flex justify-center gap-20">
+        <div class="fact_item">
+          <h2 class="fact_title text-[48px] text-[#00FF88] font-black">
+            150K+
+          </h2>
+          <p class="fact_content text-[16px] uppercase">Monthly Listeners</p>
+        </div>
+        <div class="fact_item">
+          <h2 class="fact_title text-[48px] text-[#00FF88] font-black">
+            150K+
+          </h2>
+          <p class="fact_content text-[16px] uppercase">Monthly Listeners</p>
+        </div>
+        <div class="fact_item">
+          <h2 class="fact_title text-[48px] text-[#00FF88] font-black">
+            150K+
+          </h2>
+          <p class="fact_content text-[16px] uppercase">Monthly Listeners</p>
+        </div>
+        <div class="fact_item">
+          <h2 class="fact_title text-[48px] text-[#00FF88] font-black">
+            150K+
+          </h2>
+          <p class="fact_content text-[16px] uppercase">Monthly Listeners</p>
+        </div>
+      </div>
     </section>
+    <!-- about section end -->
+
+    <!-- choose section start -->
+    <section id="choose_section" class="bg-[#230E3D] text-white">
+      <div class="wrapper">
+        <h2 class="text-[48px] text-center font-bold">Why Choose TechWave</h2>
+        <div class="choose_content grid grid-cols-3 grid-rows-3 gap-[30px]">
+          <div class="choose_card row-span-2 bg-[#35116566]/40">
+            <img
+              class="size-[60px]"
+              src="./assets/images/headphone.png"
+              alt=""
+              srcset=""
+            />
+            <h4 class="text-[24px] font-bold">Premium Audio Quality</h4>
+            <p class="font-normal text-[16px] text-white/40">
+              Experience crystal-clear sound with professional-grade recording
+              equipment and expert audio engineering. Every episode is mastered
+              for optimal listening across all devices and platforms.
+            </p>
+          </div>
+          <div class="choose_card col-span-2 bg-[#35116566]/40">
+            <img
+              class="size-[60px]"
+              src="./assets/images/headphone.png"
+              alt=""
+              srcset=""
+            />
+            <h4 class="text-[24px] font-bold">Premium Audio Quality</h4>
+            <p class="font-normal text-[16px] text-white/40">
+              Experience crystal-clear sound with professional-grade recording
+              equipment and expert audio engineering. Every episode is mastered
+              for optimal listening across all devices and platforms.
+            </p>
+          </div>
+          <div class="choose_card col-span-2 bg-[#35116566]/40">
+            <img
+              class="size-[60px]"
+              src="./assets/images/headphone.png"
+              alt=""
+              srcset=""
+            />
+            <h4 class="text-[24px] font-bold">Premium Audio Quality</h4>
+            <p class="font-normal text-[16px] text-white/40">
+              Experience crystal-clear sound with professional-grade recording
+              equipment and expert audio engineering. Every episode is mastered
+              for optimal listening across all devices and platforms.
+            </p>
+          </div>
+          <div class="choose_card col-span-2 bg-[#35116566]/40">
+            <img
+              class="size-[60px]"
+              src="./assets/images/headphone.png"
+              alt=""
+              srcset=""
+            />
+            <h4 class="text-[24px] font-bold">Premium Audio Quality</h4>
+            <p class="font-normal text-[16px] text-white/40">
+              Experience crystal-clear sound with professional-grade recording
+              equipment and expert audio engineering. Every episode is mastered
+              for optimal listening across all devices and platforms.
+            </p>
+          </div>
+          <div class="choose_card col-span-1 row-span-1 bg-[#35116566]/40">
+            <img
+              class="size-[60px]"
+              src="./assets/images/headphone.png"
+              alt=""
+              srcset=""
+            />
+            <h4 class="text-[24px] font-bold">Premium Audio Quality</h4>
+            <p class="font-normal text-[16px] text-white/40">
+              Experience crystal-clear sound with professional-grade recording
+              equipment and expert audio engineering. Every episode is mastered
+              for optimal listening across all devices and platforms.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- choose section end -->
+
+    <!-- featured section start -->
+    <section id="featured_section" class="bg-[#230E3D] text-white">
+      <div class="wrapper">
+        <h2 class="text-center font-bold text-5xl !mb-10">Featured Episodes</h2>
+        <div class="video_blog flex gap-10 !mb-[120px]">
+          <div class="vedio_card bg-[#250D44]">
+            <iframe src="" frameborder="0"></iframe>
+            <div class="video_card_content">
+              <h3 class="font-bold text-[24px]">
+                The Future of AI in Everyday Life
+              </h3>
+              <p class="text-[16px] text-[#ffffff]/60">
+                Exploring how artificial intelligence is transforming our daily
+                routines and what to expect in the next decade.
+              </p>
+              <span class="time text-[16px] text-[#00FF88]"
+                ><i class="fa-solid fa-clock"></i> 42 min</span
+              >
+            </div>
+          </div>
+          <div class="vedio_card bg-[#250D44]">
+            <iframe src="" frameborder="0"></iframe>
+            <div class="video_card_content">
+              <h3 class="font-bold text-[24px]">
+                The Future of AI in Everyday Life
+              </h3>
+              <p class="text-[16px] text-[#ffffff]/60">
+                Exploring how artificial intelligence is transforming our daily
+                routines and what to expect in the next decade.
+              </p>
+              <span class="time text-[16px] text-[#00FF88]"
+                ><i class="fa-solid fa-clock"></i> 42 min</span
+              >
+            </div>
+          </div>
+          <div class="vedio_card bg-[#250D44]">
+            <iframe src="" frameborder="0"></iframe>
+            <div class="video_card_content">
+              <h3 class="font-bold text-[24px]">
+                The Future of AI in Everyday Life
+              </h3>
+              <p class="text-[16px] text-[#ffffff]/60">
+                Exploring how artificial intelligence is transforming our daily
+                routines and what to expect in the next decade.
+              </p>
+              <span class="time text-[16px] text-[#00FF88]"
+                ><i class="fa-solid fa-clock"></i> 42 min</span
+              >
+            </div>
+          </div>
+        </div>
+        <h3 class="text-center text-[48px] font-bold mb-10">Meet the Host</h3>
+        <div
+          class="host_content flex p-10 bg-[#351165]/40 rounded-[40px] gap-6"
+        >
+          <img src="./assets/images/host.png" alt="" />
+
+          <div>
+            <h3 class="text-[32px] font-bold">Alex Kumar</h3>
+            <p class="py-4 text-white/40 mb-6">
+              Tech entrepreneur, productivity expert, and lifelong learner. Alex
+              has been in the tech industry for over 10 years, working with
+              startups and Fortune 500 companies. Through TechWave, Alex shares
+              insights from industry leaders and practical advice for anyone
+              looking to grow in tech.
+            </p>
+            <ul class="flex gap-2">
+              <li>
+                <a href="#" class="border border-[#533C72] p-2.5 rounded-full"
+                  ><i class="fa-brands fa-linkedin-in"></i
+                ></a>
+              </li>
+              <li>
+                <a href="#" class="border border-[#533C72] p-2.5 rounded-full"
+                  ><i class="fa-brands fa-x-twitter"></i
+                ></a>
+              </li>
+              <li>
+                <a href="#" class="border border-[#533C72] p-2.5 rounded-full"
+                  ><i class="fa-brands fa-square-instagram"></i
+                ></a>
+              </li>
+              <li>
+                <a href="#" class="border border-[#533C72] p-2.5 rounded-full"
+                  ><i class="fa-brands fa-youtube"></i
+                ></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- featured section end -->
+
+    <!-- footer section start -->
+    <footer>
+      <div class="wrapper p-[120px] flex flex-col justify-center items-center">
+        <div class="footer_logo text-[64px] font-bold">
+          Tech<span>Wave</span>
+        </div>
+        <ul class="flex gap-10 my-8">
+          <li>
+            <a href=""><i class="fa-brands fa-spotify"></i>&nbsp;Spotify</a>
+          </li>
+          <li>
+            <a href=""
+              ><i class="fa-solid fa-podcast"></i>&nbsp;Apple Podcasts</a
+            >
+          </li>
+          <li>
+            <a href=""><i class="fa-brands fa-youtube"></i>&nbsp;Youtube</a>
+          </li>
+          <li>
+            <a href=""><i class="fa-brands fa-twitter"></i>&nbsp;Twitter</a>
+          </li>
+        </ul>
+        <div class="copy_right">
+          &copy; 2026 TechWave Podcast. All rights reserved.
+        </div>
+      </div>
+    </footer>
+    <!-- footer section end -->
   </body>
 </html>
