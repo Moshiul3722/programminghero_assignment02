@@ -5,7 +5,7 @@ body {
 }
 
 .wrapper {
-  width: 1100px;
+  width: 80%;
   margin: 0 auto;
 }
 
@@ -42,7 +42,9 @@ body {
   color: #fff;
   background: linear-gradient(45deg, #f7e93f, #fb09b4, #9100f8);
   cursor: pointer;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
 }
 
@@ -63,7 +65,9 @@ body {
 .subscribe-btn:active {
   transform: scale(0.98);
 }
-
+.nav_toggle {
+  display: none;
+}
 .menu > ul > li:hover a {
   background: linear-gradient(45deg, #f7e93f, #fb09b4, #9100f8);
   padding: 6px 12px;
@@ -263,4 +267,112 @@ footer {
   background-position: center;
   background-size: cover;
   color: white;
+}
+
+/* Small Devices */
+@media (max-width: 480px) {
+  .wrapper {
+    width: 100%;
+  }
+
+  #about_section,
+  #choose_section,
+  #featured_section {
+    padding: 40px 20px;
+  }
+
+  #about_section h2,
+  #choose_section h2,
+  #featured_section h2,
+  #featured_section h3 {
+    font-size: 32px;
+  }
+
+  header nav {
+    padding: 20px;
+  }
+
+  .logo {
+    font-size: 34px;
+  }
+
+  .menu,
+  .subscribe-btn {
+    display: none;
+  }
+  .nav_toggle {
+    display: block;
+  }
+  .nav_toggle i {
+    font-size: 24px;
+  }
+  .bg_image {
+    width: 200px;
+    height: 200px;
+  }
+  .top_image {
+    width: 60px;
+  }
+  .batch {
+    right: 55px;
+    top: -28px;
+  }
+  .header_content {
+    height: 420px;
+  }
+  .bg_image {
+    top: 80%;
+  }
+  .top_image {
+    top: 80%;
+  }
+
+  .about_content p:first-of-type {
+    line-height: 1.4;
+  }
+
+  .about_facts {
+    flex-wrap: wrap;
+  }
+  .about_facts h2 {
+    font-size: 48px !important;
+  }
+  .choose_content {
+    grid-template-columns: 1fr;
+  }
+  .choose_card {
+    grid-column: span 1;
+    grid-row: span 1;
+  }
+
+  /* featured section */
+  .video_blog {
+    flex-direction: column;
+    margin-bottom: 60px;
+  }
+
+  /* host section */
+  .host_content {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .host_content img {
+    width: 150px;
+    height: 150px;
+  }
+  .host_info {
+    text-align: center;
+  }
+  .host_info ul {
+    justify-content: center;
+  }
+}
+
+/* Medium Devices */
+@media (min-width: 481px) and (max-width: 768px) {
+}
+
+/* Large Devices */
+@media (min-width: 769px) {
 }

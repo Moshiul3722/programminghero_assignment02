@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -13,7 +13,7 @@
   </head>
   <body>
     <!-- header start -->
-    <header class="hidden">
+    <header class="">
       <nav class="py-3 bg-[#1A0B2E] !border-b-[1px] border-white/10">
         <div class="wrapper flex justify-between items-center text-white">
           <div class="logo">Tech<span>Wave</span></div>
@@ -26,6 +26,10 @@
           </div>
           <button class="subscribe-btn">
             Subscribe <span class="arrow">→</span>
+          </button>
+
+          <button class="nav_toggle">
+            <i class="fa-solid fa-bars"></i>
           </button>
         </div>
       </nav>
@@ -61,7 +65,7 @@
     <!-- header end -->
 
     <!-- about section start -->
-    <section id="about_section" class="hidden">
+    <section id="about_section" class="">
       <div class="wrapper about_content">
         <h2>About the Podcast</h2>
         <p>
@@ -141,6 +145,7 @@
               downloads.
             </p>
           </div>
+
           <div class="choose_card col-span-2 bg-[#35116566]/40">
             <img
               class="size-[60px]"
@@ -187,10 +192,10 @@
     <!-- choose section end -->
 
     <!-- featured section start -->
-    <section id="featured_section" class="bg-[#1A0B2E] text-white hidden">
+    <section id="featured_section" class="bg-[#1A0B2E] text-white">
       <div class="wrapper">
         <h2 class="text-center font-bold text-5xl !mb-10">Featured Episodes</h2>
-        <div class="video_blog flex gap-10 !mb-[120px]">
+        <div class="video_blog flex gap-10 mb-[120px]">
           <div class="vedio_card bg-[#250D44]">
             <iframe
               width="100%"
@@ -198,7 +203,15 @@
               src="https://www.youtube.com/embed/cnY4D3a9QXQ?si=aftm7b0JQdewXFb-"
               title="YouTube video player"
               frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allow="
+                accelerometer;
+                autoplay;
+                clipboard-write;
+                encrypted-media;
+                gyroscope;
+                picture-in-picture;
+                web-share;
+              "
               referrerpolicy="strict-origin-when-cross-origin"
               allowfullscreen
             ></iframe>
@@ -222,7 +235,15 @@
               src="https://www.youtube.com/embed/dCm-hlPN2t0?si=ZZdSot3x0KytZJtm"
               title="YouTube video player"
               frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allow="
+                accelerometer;
+                autoplay;
+                clipboard-write;
+                encrypted-media;
+                gyroscope;
+                picture-in-picture;
+                web-share;
+              "
               referrerpolicy="strict-origin-when-cross-origin"
               allowfullscreen
             ></iframe>
@@ -246,7 +267,15 @@
               src="https://www.youtube.com/embed/wIvLMYiRsRU?si=fNrYxNXjWVuCOXtQ"
               title="YouTube video player"
               frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allow="
+                accelerometer;
+                autoplay;
+                clipboard-write;
+                encrypted-media;
+                gyroscope;
+                picture-in-picture;
+                web-share;
+              "
               referrerpolicy="strict-origin-when-cross-origin"
               allowfullscreen
             ></iframe>
@@ -270,7 +299,7 @@
         >
           <img src="./assets/images/host.png" alt="" />
 
-          <div>
+          <div class="host_info">
             <h3 class="text-[32px] font-bold">Alex Kumar</h3>
             <p class="py-4 text-white/40 mb-6">
               Tech entrepreneur, productivity expert, and lifelong learner. Alex
@@ -308,32 +337,37 @@
     <!-- featured section end -->
 
     <!-- footer section start -->
-    <footer class="hidden">
-      <div class="wrapper p-[120px] flex flex-col justify-center items-center">
-        <div class="footer_logo text-[64px] font-bold">
+    <footer class="bg-footer">
+      <div
+        class="wrapper px-6 py-16 md:px-16 md:py-24 lg:p-[120px] flex flex-col justify-center items-center text-center"
+      >
+        <div
+          class="footer_logo text-[36px] md:text-[48px] lg:text-[64px] font-bold"
+        >
           Tech<span>Wave</span>
         </div>
-        <ul class="flex gap-10 my-8">
+
+        <ul class="flex flex-wrap justify-center gap-6 md:gap-10 my-8">
           <li>
-            <a href=""><i class="fa-brands fa-spotify"></i>&nbsp;Spotify</a>
+            <a href=""><i class="fa-brands fa-spotify"></i> Spotify</a>
           </li>
           <li>
-            <a href=""
-              ><i class="fa-solid fa-podcast"></i>&nbsp;Apple Podcasts</a
-            >
+            <a href=""><i class="fa-solid fa-podcast"></i> Apple Podcasts</a>
           </li>
           <li>
-            <a href=""><i class="fa-brands fa-youtube"></i>&nbsp;Youtube</a>
+            <a href=""><i class="fa-brands fa-youtube"></i> Youtube</a>
           </li>
           <li>
-            <a href=""><i class="fa-brands fa-twitter"></i>&nbsp;Twitter</a>
+            <a href=""><i class="fa-brands fa-twitter"></i> Twitter</a>
           </li>
         </ul>
-        <div class="copy_right">
+
+        <div class="copy_right text-sm md:text-base">
           &copy; 2026 TechWave Podcast. All rights reserved.
         </div>
       </div>
     </footer>
+
     <!-- footer section end -->
   </body>
 </html>
