@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -13,18 +13,20 @@
   </head>
   <body>
     <!-- header start -->
-    <header class="">
-      <nav class="flex justify-between py-4 bg-[#1A0B2E]">
-        <div class="logo">Tech<span>Wave</span></div>
-        <div class="menu">
-          <ul class="flex gap-8">
-            <li><a href="#">About</a></li>
-            <li><a href="#">Episodes</a></li>
-            <li><a href="#">Host</a></li>
-          </ul>
-        </div>
-        <div class="btn_subscribe">
-          <a href="#">Subscribe</a>
+    <header class="hidden">
+      <nav class="py-3 bg-[#1A0B2E] !border-b-[1px] border-white/10">
+        <div class="wrapper flex justify-between items-center text-white">
+          <div class="logo">Tech<span>Wave</span></div>
+          <div class="menu">
+            <ul class="flex gap-8">
+              <li><a href="#">About</a></li>
+              <li><a href="#">Episodes</a></li>
+              <li><a href="#">Host</a></li>
+            </ul>
+          </div>
+          <button class="subscribe-btn">
+            Subscribe <span class="arrow">→</span>
+          </button>
         </div>
       </nav>
       <div class="header_content">
@@ -59,7 +61,7 @@
     <!-- header end -->
 
     <!-- about section start -->
-    <section id="about_section">
+    <section id="about_section" class="hidden">
       <div class="wrapper about_content">
         <h2>About the Podcast</h2>
         <p>
@@ -72,31 +74,34 @@
         <p class="">
           professionals and tech enthusiasts who start their day with TechWave.
         </p>
-      </div>
-      <div class="about_facts flex justify-center gap-20">
-        <div class="fact_item">
-          <h2 class="fact_title text-[48px] text-[#00FF88] font-black">
-            150K+
-          </h2>
-          <p class="fact_content text-[16px] uppercase">Monthly Listeners</p>
-        </div>
-        <div class="fact_item">
-          <h2 class="fact_title text-[48px] text-[#00FF88] font-black">
-            150K+
-          </h2>
-          <p class="fact_content text-[16px] uppercase">Monthly Listeners</p>
-        </div>
-        <div class="fact_item">
-          <h2 class="fact_title text-[48px] text-[#00FF88] font-black">
-            150K+
-          </h2>
-          <p class="fact_content text-[16px] uppercase">Monthly Listeners</p>
-        </div>
-        <div class="fact_item">
-          <h2 class="fact_title text-[48px] text-[#00FF88] font-black">
-            150K+
-          </h2>
-          <p class="fact_content text-[16px] uppercase">Monthly Listeners</p>
+
+        <div
+          class="about_facts flex justify-center gap-20 !border-t-[1px] border-white/10 pt-20 mt-20"
+        >
+          <div class="fact_item">
+            <h2 class="fact_title text-[48px] text-[#00FF88] font-black">
+              150K+
+            </h2>
+            <p class="fact_content text-[16px] uppercase">Monthly Listeners</p>
+          </div>
+          <div class="fact_item">
+            <h2 class="fact_title text-[48px] text-[#00FF88] font-black">
+              200+
+            </h2>
+            <p class="fact_content text-[16px] uppercase">Monthly Listeners</p>
+          </div>
+          <div class="fact_item">
+            <h2 class="fact_title text-[48px] text-[#00FF88] font-black">
+              4.9★
+            </h2>
+            <p class="fact_content text-[16px] uppercase">Monthly Listeners</p>
+          </div>
+          <div class="fact_item">
+            <h2 class="fact_title text-[48px] text-[#00FF88] font-black">
+              50+
+            </h2>
+            <p class="fact_content text-[16px] uppercase">Monthly Listeners</p>
+          </div>
         </div>
       </div>
     </section>
@@ -105,7 +110,9 @@
     <!-- choose section start -->
     <section id="choose_section" class="bg-[#230E3D] text-white">
       <div class="wrapper">
-        <h2 class="text-[48px] text-center font-bold">Why Choose TechWave</h2>
+        <h2 class="text-[48px] text-center font-bold mb-10">
+          Why Choose TechWave
+        </h2>
         <div class="choose_content grid grid-cols-3 grid-rows-3 gap-[30px]">
           <div class="choose_card row-span-2 bg-[#35116566]/40">
             <img
@@ -124,57 +131,54 @@
           <div class="choose_card col-span-2 bg-[#35116566]/40">
             <img
               class="size-[60px]"
-              src="./assets/images/headphone.png"
+              src="./assets/images/device.png"
               alt=""
               srcset=""
             />
-            <h4 class="text-[24px] font-bold">Premium Audio Quality</h4>
+            <h4 class="text-[24px] font-bold">Mobile Friendly</h4>
             <p class="font-normal text-[16px] text-white/40">
-              Experience crystal-clear sound with professional-grade recording
-              equipment and expert audio engineering. Every episode is mastered
-              for optimal listening across all devices and platforms.
+              Listen on the go with seamless mobile experience and offline
+              downloads.
             </p>
           </div>
           <div class="choose_card col-span-2 bg-[#35116566]/40">
             <img
               class="size-[60px]"
-              src="./assets/images/headphone.png"
+              src="./assets/images/location.png"
               alt=""
               srcset=""
             />
-            <h4 class="text-[24px] font-bold">Premium Audio Quality</h4>
+            <h4 class="text-[24px] font-bold">Global Community</h4>
             <p class="font-normal text-[16px] text-white/40">
-              Experience crystal-clear sound with professional-grade recording
-              equipment and expert audio engineering. Every episode is mastered
-              for optimal listening across all devices and platforms.
+              Connect with tech enthusiasts from over 120 countries worldwide.
             </p>
           </div>
           <div class="choose_card col-span-2 bg-[#35116566]/40">
             <img
               class="size-[60px]"
-              src="./assets/images/headphone.png"
+              src="./assets/images/zap-fast.png"
               alt=""
               srcset=""
             />
-            <h4 class="text-[24px] font-bold">Premium Audio Quality</h4>
+            <h4 class="text-[24px] font-bold">Exclusive Interviewsy</h4>
             <p class="font-normal text-[16px] text-white/40">
-              Experience crystal-clear sound with professional-grade recording
-              equipment and expert audio engineering. Every episode is mastered
-              for optimal listening across all devices and platforms.
+              Get unprecedented access to industry titans, startup founders, and
+              tech visionaries. Our host secures exclusive conversations you
+              won't find anywhere else, diving deep into their journeys,
+              failures, and success strategies.
             </p>
           </div>
           <div class="choose_card col-span-1 row-span-1 bg-[#35116566]/40">
             <img
               class="size-[60px]"
-              src="./assets/images/headphone.png"
+              src="./assets/images/resource.png"
               alt=""
               srcset=""
             />
-            <h4 class="text-[24px] font-bold">Premium Audio Quality</h4>
+            <h4 class="text-[24px] font-bold">Rich Resources</h4>
             <p class="font-normal text-[16px] text-white/40">
-              Experience crystal-clear sound with professional-grade recording
-              equipment and expert audio engineering. Every episode is mastered
-              for optimal listening across all devices and platforms.
+              Access show notes, transcripts, and additional learning materials
+              for every episode.
             </p>
           </div>
         </div>
@@ -183,12 +187,21 @@
     <!-- choose section end -->
 
     <!-- featured section start -->
-    <section id="featured_section" class="bg-[#230E3D] text-white">
+    <section id="featured_section" class="bg-[#1A0B2E] text-white hidden">
       <div class="wrapper">
         <h2 class="text-center font-bold text-5xl !mb-10">Featured Episodes</h2>
         <div class="video_blog flex gap-10 !mb-[120px]">
           <div class="vedio_card bg-[#250D44]">
-            <iframe src="" frameborder="0"></iframe>
+            <iframe
+              width="100%"
+              height="315"
+              src="https://www.youtube.com/embed/cnY4D3a9QXQ?si=aftm7b0JQdewXFb-"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            ></iframe>
             <div class="video_card_content">
               <h3 class="font-bold text-[24px]">
                 The Future of AI in Everyday Life
@@ -203,7 +216,16 @@
             </div>
           </div>
           <div class="vedio_card bg-[#250D44]">
-            <iframe src="" frameborder="0"></iframe>
+            <iframe
+              width="100%"
+              height="315"
+              src="https://www.youtube.com/embed/dCm-hlPN2t0?si=ZZdSot3x0KytZJtm"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            ></iframe>
             <div class="video_card_content">
               <h3 class="font-bold text-[24px]">
                 The Future of AI in Everyday Life
@@ -218,7 +240,16 @@
             </div>
           </div>
           <div class="vedio_card bg-[#250D44]">
-            <iframe src="" frameborder="0"></iframe>
+            <iframe
+              width="100%"
+              height="315"
+              src="https://www.youtube.com/embed/wIvLMYiRsRU?si=fNrYxNXjWVuCOXtQ"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            ></iframe>
             <div class="video_card_content">
               <h3 class="font-bold text-[24px]">
                 The Future of AI in Everyday Life
@@ -277,7 +308,7 @@
     <!-- featured section end -->
 
     <!-- footer section start -->
-    <footer>
+    <footer class="hidden">
       <div class="wrapper p-[120px] flex flex-col justify-center items-center">
         <div class="footer_logo text-[64px] font-bold">
           Tech<span>Wave</span>
