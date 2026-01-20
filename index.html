@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Assignment-02-TechWeave</title>
     <link rel="stylesheet" href="./assets/css/style.css" />
+
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
@@ -17,18 +18,18 @@
       <nav class="py-3 bg-[#1A0B2E] !border-b-[1px] border-white/10">
         <div class="wrapper flex justify-between items-center text-white">
           <div class="logo">Tech<span>Wave</span></div>
-          <div class="menu">
+          <div class="menu" id="menu">
             <ul class="flex gap-8">
               <li><a href="#">About</a></li>
               <li><a href="#">Episodes</a></li>
               <li><a href="#">Host</a></li>
             </ul>
           </div>
-          <button class="subscribe-btn">
+          <button class="subscribe-btn" id="subscribe_btn">
             Subscribe <span class="arrow">→</span>
           </button>
 
-          <button class="nav_toggle">
+          <button class="nav_toggle" id="nav_toggle">
             <i class="fa-solid fa-bars"></i>
           </button>
         </div>
@@ -347,7 +348,7 @@
           Tech<span>Wave</span>
         </div>
 
-        <ul class="flex flex-wrap justify-center gap-6 md:gap-10 my-8">
+        <ul class="flex flex-wrap justify-center gap-10 my-8">
           <li>
             <a href=""><i class="fa-brands fa-spotify"></i> Spotify</a>
           </li>
@@ -369,5 +370,7 @@
     </footer>
 
     <!-- footer section end -->
+
+    <script src="./assets/js/main.js"></script>
   </body>
 </html>

@@ -125,7 +125,8 @@ body {
 
 .header_content {
   background-image: url("../images/hero-bg.png");
-  height: 760px;
+  /* min-height: 760px; */
+  height: auto;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -135,6 +136,7 @@ body {
   position: relative;
   text-align: center;
   padding-top: 101px;
+  overflow: hidden;
 }
 
 .content h2 {
@@ -261,12 +263,22 @@ body {
 }
 
 /* footer style */
+
 footer {
   background: url("../images/footer-bg.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   color: white;
+  overflow: hidden;
+  width: 100%;
+  min-height: 400px;
+  display: flex;
+  align-items: center;
+}
+
+footer ul li a i {
+  font-size: 16px;
 }
 
 /* Small Devices */
@@ -296,16 +308,49 @@ footer {
     font-size: 34px;
   }
 
-  .menu,
   .subscribe-btn {
-    display: none;
+    opacity: 0;
+    position: fixed;
+    top: 220px;
+    z-index: 99;
+    /* background: rebeccapurple; */
+    width: 90%;
   }
+
+  .menu {
+    position: fixed;
+    top: 92px;
+    left: 0;
+    width: 100%;
+    z-index: 99;
+    background: rebeccapurple;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+  }
+
+  .menu.active,
+  .subscribe-btn.active {
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+  .menu ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding: 16px 0;
+  }
+
   .nav_toggle {
     display: block;
   }
   .nav_toggle i {
     font-size: 24px;
   }
+
+  /* ====== header content =========== */
+
   .bg_image {
     width: 200px;
     height: 200px;
@@ -314,17 +359,28 @@ footer {
     width: 60px;
   }
   .batch {
-    right: 55px;
-    top: -28px;
+    right: 5px;
+    top: 30px;
   }
+
+  .image_stack {
+    width: 220px;
+    height: 220px;
+  }
+
+  .content h2 {
+    font-size: 36px;
+  }
+
   .header_content {
-    height: 420px;
+    padding-top: 60px;
   }
+
   .bg_image {
-    top: 80%;
+    top: 55%;
   }
   .top_image {
-    top: 80%;
+    top: 55%;
   }
 
   .about_content p:first-of-type {
@@ -366,6 +422,11 @@ footer {
   }
   .host_info ul {
     justify-content: center;
+  }
+
+  /* footer */
+  footer {
+    background-size: 100% 100%;
   }
 }
 
